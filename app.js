@@ -26,7 +26,7 @@ function listaAmigos() {
 function sortearAmigo() {
   let tamanhoLista = amigos.length;
 
-  if (amigos.length >= 0) {
+  if (amigos.length) {
     let amigoAleatorio = Math.floor(Math.random() * tamanhoLista);
     let amigoSorteado = amigos[amigoAleatorio];
 
@@ -37,10 +37,10 @@ function sortearAmigo() {
 
     if (index > -1) {
       amigos.splice(index, 1);
-    } else {
-      alert("Sua lista Acabou");
-      resultado.innerHTML = "";
-      lista.innerHTML = "";
     }
+  } else {
+    alert("Sua lista acabou");
+    resultado.innerHTML = "";
+    lista.innerHTML = "";
   }
 }
