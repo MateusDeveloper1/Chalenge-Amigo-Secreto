@@ -38,7 +38,7 @@ function sortearAmigo() {
     if (index > -1) {
       amigos.splice(index, 1);
     }
-  }else {
+  } else {
     resultado.innerHTML = "";
     lista.innerHTML = "";
   }
